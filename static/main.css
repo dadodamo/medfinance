@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    font: normal normal medium 18px/18px Helvetica Neue;
+    letter-spacing: 0px;
+}
+
+.nav-link {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.navbar.navbar-solid {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.navbar.navbar-solid .navbar-brand,
+.navbar.navbar-solid .nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar.navbar-solid .navbar-brand:hover,
+.navbar.navbar-solid .nav-link:hover {
+    color: #555;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Desktop-CSS  */
+
+.start-content-d {
+    margin-left: 10vh;
+    margin-top: 30vh;
+    font-size: 20/24px;
+}
+
+.start-d {
+    padding: 0px;
+    background-image: url('template-img.jpeg');
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(100px);
+}
+
+.start-text-d {
+    text-align: left;
+    color: white;
+}
+
+.curved {
+    width: 100%;
+}
+
+
+.curved-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.curved-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.curved-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bg-beige {
+    background-color: #F5F3EE;
+}
+
+.card-link {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-link img {
+    width: 50%;
+    height: auto;
+}
+
+.card-link:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.card-link:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-link:hover h4 {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.pic-component {
+    padding: 0;
+    margin: 0;
+}
+
+.svg-pic-div {
+    position: relative;
+    width: 100%; /* or set to a specific width */
+    height: auto; /* this will be determined by the aspect ratio of the SVGs */
+    padding-left:0;
+  }
+  
+  .svg-pic-1,
+  .svg-pic-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .svg-pic-3 img {
+    display: none;
+    position: absolute;
+    width: 775px;
+    height: 624px;
+    top: 150px;
+    left: 100px;
+    border-radius: 100px;
+    object-fit:cover;
+  }
