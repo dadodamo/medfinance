@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font: normal normal medium 18px/18px Helvetica Neue;
     letter-spacing: 0px;
+    overflow-x: hidden;
 }
 
 .nav-link {
@@ -38,6 +39,10 @@ body {
 
 /* Desktop-CSS  */
 
+.p-text {
+    color: grey;
+}
+
 .start-content-d {
     margin-left: 10vh;
     margin-top: 30vh;
@@ -49,7 +54,6 @@ body {
     background-image: url('template-img.jpeg');
     background-size: cover;
     height: 100vh;
-    backdrop-filter: blur(100px);
 }
 
 .start-text-d {
@@ -88,11 +92,12 @@ body {
 }
 
 .card-link {
-    width: 250px;
+    width: 220px;
     height: 300px;
     text-align: center;
     border-radius: 5px;
 }
+
 
 .card-link img {
     width: 50%;
@@ -105,7 +110,7 @@ body {
     transition: 0.5s;
 }
 
-.card-link:hover img{
+.card-link:hover img {
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -115,33 +120,62 @@ body {
     transition: 0.5s;
 }
 
-.pic-component {
-    padding: 0;
-    margin: 0;
+.card-link-2 {
+    width: 280px;
+    height: 330px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px #00000029;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
 }
 
-.svg-pic-div {
-    position: relative;
-    width: 100%; /* or set to a specific width */
-    height: auto; /* this will be determined by the aspect ratio of the SVGs */
-    padding-left:0;
-  }
-  
-  .svg-pic-1,
-  .svg-pic-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 0;
-  }
+.card-link-2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 
-  .svg-pic-3 img {
-    display: none;
+}
+
+.png-pic-cont {
+    position: relative;
+}
+
+.pic-component {
+    height: 100vh;
+}
+
+.png-design {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.png-design img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.design-pic {
+    display: flex;
+    padding-left: 15vh;
+    align-items: center;
     position: absolute;
-    width: 775px;
-    height: 624px;
-    top: 150px;
-    left: 100px;
-    border-radius: 100px;
-    object-fit:cover;
-  }
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+
+.design-pic img {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 50%;
+    width: 80%;
+}
+
+.png-pic-text-cont {}
