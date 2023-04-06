@@ -1,9 +1,14 @@
 body {
-    margin: 0px;
-    font: normal normal medium 18px/18px Helvetica Neue;
     letter-spacing: 0px;
+    max-width: 100%;
     overflow-x: hidden;
+    padding: 0px;
 }
+
+.jumbrotron {
+    background-size: 100% 100%;
+}
+
 
 .nav-link {
     text-align: left;
@@ -33,10 +38,6 @@ body {
     color: #555;
 }
 
-.row {
-    margin: 0;
-}
-
 /* Desktop-CSS  */
 
 .p-text {
@@ -44,13 +45,12 @@ body {
 }
 
 .start-content-d {
-    margin-left: 10vh;
+    padding-left: 10vh;
     margin-top: 30vh;
     font-size: 20/24px;
 }
 
 .start-d {
-    padding: 0px;
     background-image: url('template-img.jpeg');
     background-size: cover;
     height: 100vh;
@@ -141,6 +141,22 @@ body {
 
 }
 
+.card-link-2:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+/* 
+.card-link-2:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+} */
+
+/* .card-link-2:hover h4 {
+    transform: scale(1.1);
+    transition: 0.5s;
+} */
+
 .png-pic-cont {
     position: relative;
 }
@@ -150,8 +166,8 @@ body {
 }
 
 .png-design {
-    width: 50%;
     height: 100%;
+    width: 50%;
     justify-content: center;
 }
 
@@ -161,14 +177,22 @@ body {
     height: 100%;
 }
 
+
 .design-pic {
     display: flex;
-    padding-left: 15vh;
+    padding-left: 10vw;
     align-items: center;
     position: absolute;
     height: 100%;
     width: 100%;
     bottom: 0;
+}
+
+.png-design {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items:end;
 }
 
 .design-pic img {
@@ -177,5 +201,3 @@ body {
     height: 50%;
     width: 80%;
 }
-
-.png-pic-text-cont {}
