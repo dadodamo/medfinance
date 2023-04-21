@@ -9,12 +9,51 @@ body {
     background-size: 100% 100%;
 }
 
+.line-height {
+    line-height: 13pt;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    line-height: 12pt;
+}
 
 .nav-link {
     text-align: left;
-    letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: #610556
+}
+
+.nav-btn {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+
+.nav-btn:hover {
+    background: #610556;
+    color: white !important;
+    transition: 1s;
+}
+
+.kontakt-button {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+.kontakt-button:hover {
+    background: #610556;
+    color: white !important;
+    transition: 1s;
 }
 
 .navbar {
@@ -23,7 +62,7 @@ body {
 }
 
 .navbar.navbar-solid {
-    background-color: #fff;
+    background-color: #F5F3EE;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 }
 
@@ -35,7 +74,12 @@ body {
 
 .navbar.navbar-solid .navbar-brand:hover,
 .navbar.navbar-solid .nav-link:hover {
-    color: #555;
+    color: black;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: start;
 }
 
 /* Desktop-CSS  */
@@ -129,7 +173,7 @@ body {
     background: white;
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -146,6 +190,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
+
 /* 
 .card-link-2:hover img {
     transform: scale(1.1);
@@ -167,8 +212,7 @@ body {
 
 .png-design {
     height: 100%;
-    width: 50%;
-    justify-content: center;
+    width: 70%;
 }
 
 .png-design img {
@@ -180,7 +224,7 @@ body {
 
 .design-pic {
     display: flex;
-    padding-left: 10vw;
+    padding-left: 15vw;
     align-items: center;
     position: absolute;
     height: 100%;
@@ -188,16 +232,103 @@ body {
     bottom: 0;
 }
 
-.png-design {
-    height: 100%;
-    width: 50%;
-    justify-content: center;
-    align-items:end;
-}
 
 .design-pic img {
     object-fit: cover;
-    border-radius: 20px;
-    height: 50%;
+    border-radius: 30px;
+    height: 60%;
     width: 80%;
+}
+
+
+.design-pic-right {
+    display: flex;
+    position: absolute;
+    padding-right: 15vw;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+
+.design-pic-right img {
+    object-fit: cover;
+    border-radius: 30px;
+    height: 60%;
+    width: 80%;
+    float: right;
+}
+
+.png-design-right {
+    height: 100%;
+    width: 70%;
+    margin: 0%;
+    float: right;
+}
+
+.png-design-right img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #610556;
+}
+
+.icon-footer-div {
+    width: 50%;
+    height: 100%;
+}
+
+.icon-footer-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* Nebenseiten CSS */
+
+.img-cont {
+    width: 100%;
+    height: 40vh;
+}
+
+.img-cont img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-content {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sub-contact {
+    border-radius: 20px;
+}
+
+.icon-cont-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-contact img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img-cont-content {
+    width: 100%;
+    height:auto;
+}
+
+.img-cont-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
