@@ -1,3 +1,8 @@
+@font-face {
+    font-family: handwrittenFont;
+    src: url("Bitcheese.ttf");
+  }
+
 body {
     letter-spacing: 0px;
     max-width: 100%;
