@@ -26,14 +26,14 @@ body {
 
 .nav-link {
     text-align: left;
-    color: #FFFFFF;
+    color: #333;
     opacity: 1;
     font-size: 15px;
 }
 
 .nav-link:hover {
     
-    color: rgb(218, 218, 218);
+    color: #610556;
     transition: 0.1s;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: #F5F3EE;
     transition: background-color 1s ease;
 }
 
@@ -109,14 +109,15 @@ body {
 
 .start-content-d {
     padding-left: 10vh;
-    margin-top: 30vh;
+    margin-top: 25vh;
     font-size: 20/24px;
 }
 
 .start-d {
-    background-image: url('template-img.jpeg');
+    background-image: url('test.jpg');
     background-size: cover;
     height: 100vh;
+    opacity: 0.8;
 }
 
 .start-text-d {
@@ -403,7 +404,8 @@ footer {
 
 .img-cont {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    margin-top: 5vh;
 }
 
 .img-cont img {
