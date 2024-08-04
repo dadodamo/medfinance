@@ -26,14 +26,14 @@ body {
 
 .nav-link {
     text-align: left;
-    color: #333;
+    color: #222222;
     opacity: 1;
     font-size: 15px;
 }
 
 .nav-link:hover {
     
-    color: #610556;
+    color: #610556 !important;
     transition: 0.1s;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar {
-    background-color: #F5F3EE;
+    background-color: #f5f3eefe;
     transition: background-color 1s ease;
 }
 
@@ -100,6 +100,10 @@ body {
 .navbar-brand img {
     height: 20px;
 
+}
+
+#navbar-mobile {
+    display: none;
 }
 /* Desktop-CSS  */
 
@@ -445,6 +449,39 @@ footer {
     border-radius: 15px;
 }
 
+/* Media Queries for mobile */
 
-/* Kontakt form CSS */
+/* GALERIE */
+
+@media screen and (max-width: 1200px) {
+        #navbar-desktop {
+            display: none;
+        }
+        #navbar-mobile {
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .nav-link {
+            font-size: large;
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+        .nav-link::before {
+            content: "\2192"; /* left-pointing arrow */
+            margin-right: 5px; /* adjust this value to create space between the arrow and the link text */
+            position: relative;
+            left: -10px; /* adjust this value to position the arrow to the left of the link text */
+            font-size: 12px; /* adjust this value to change the size of the arrow */
+            color: black; /* adjust this value to change the color of the arrow */
+          }
+        
+        #navbar-mobile img {
+            height: 40px;
+            padding-left: 10px;
+        }
+}
+
 
