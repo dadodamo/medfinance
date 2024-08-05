@@ -557,7 +557,14 @@ footer {
             align-items: center;
             justify-content: center;
         }
+        #sidebar {
+            display: none;
+        }
+        .sub-content {
+            background-color: white;
+        }
     
 }
+
 
 
