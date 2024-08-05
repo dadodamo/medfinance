@@ -1,421 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- <link rel="icon" type="static/x-icon" href="/static/favicon.ico"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medFinance </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>medFinance</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./static/main.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
 
     <nav id="navbar-desktop" class="navbar navbar-expand-lg fixed-top">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-            <!-- Navbar brand -->
-            <a class="navbar-brand px-5" href="index.html">
-                <img src="static/logo_1.png" alt="" style="height: 22px;">
-            </a>
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand px-5" href="index.html">
+          <img src="static/logo_1.png" alt="" style="height: 22px" />
+        </a>
 
-            <!-- Left links -->
-            <ul class="navbar-nav pe-5 mb-2 mb-lg-0">
-                <li class="nav-item px-2">
-                    <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="betr_alt.html">Betriebliche <br> Altersversorgung</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="aerzte_apotheker.html">Finanzberatung für <br>Ärzte und Apotheker</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="verm_management.html">Vermögensmanagement</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="finanzierung.html">Finanzierung</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="versicherung.html">Versicherungen</a>
-                </li>
-                <li class="nav-item px-2">
-                    <!-- <a class="nav-link" href="#">Kontakt</a> -->
-                    <a href="kontakt.html" class="nav-link px-4 nav-btn">Kontakt</a>
-                </li>
-            </ul>
-            <!-- Left links -->
-        </div>
-        </div>
-        <!-- Container wrapper -->
+        <!-- Left links -->
+        <ul class="navbar-nav pe-5 mb-2 mb-lg-0">
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Startseite</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="betr_alt.html"
+              >Betriebliche <br />
+              Altersversorgung</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="aerzte_apotheker.html"
+              >Finanzberatung für <br />Ärzte und Apotheker</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="verm_management.html"
+              >Vermögensmanagement</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="finanzierung.html">Finanzierung</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="versicherung.html">Versicherungen</a>
+          </li>
+          <li class="nav-item px-2">
+            <!-- <a class="nav-link" href="#">Kontakt</a> -->
+            <a href="kontakt.html" class="nav-link px-4 nav-btn">Kontakt</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Container wrapper -->
     </nav>
     <!-- Navbar end-->
 
     <!-- Navbar mobile -->
-    <nav id="navbar-mobile" class="navbar navbar-light sticky-top navbar-expand-lg">
-        <a class="navbar-brand" href="index.html" title="Startseite">
-            <img class="logo-navbar navbar-brand" src="static/logo_1.png" alt="medfinance Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            style="margin-right: 10px;" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-            </span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
-
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="betr_alt.html">Betriebliche Altersversorgung</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="aerzte_apotheker.html">Finanzberatung für Ärzte und Apotheker</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="verm_management.html">Vermögensmanagement</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="finanzierung.html">Finanzierung</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="versicherung.html">Versicherungen</a>
-                </li>
-                <li class="nav-item px-2">
-                    <!-- <a class="nav-link" href="#">Kontakt</a> -->
-                    <a href="kontakt.html" class="nav-link">Kontakt</a>
-                </li>
-            </ul>
-
-
-        </div>
+    <nav id="navbar-mobile" class="navbar navbar-light sticky-top">
+      <a class="navbar-brand" href="index.html" title="Startseite">
+        <img
+          class="logo-navbar navbar-brand"
+          src="static/logo_1.png"
+          alt="medfinance Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler mx-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="betr_alt.html"
+              >Betriebliche Altersversorgung</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="aerzte_apotheker.html"
+              >Finanzberatung für Ärzte und Apotheker</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="verm_management.html"
+              >Vermögensmanagement</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="finanzierung.html">Finanzierung</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="versicherung.html">Versicherungen</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Navbar mobile end-->
 
     <span class="anchor" id="Startseite"></span>
     <div class="container-fluid start-d">
-        <div class="row curved">
-            <div class="col-12">
-                <svg class="curved-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#98C00A" fill-opacity="1"
-                        d="M0,160L60,149.3C120,139,240,117,360,133.3C480,149,600,203,720,229.3C840,256,960,256,1080,218.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                    </path>
-                </svg>
-                <svg class="curved-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#610556" fill-opacity="1"
-                        d="M0,160L40,160C80,160,160,160,240,181.3C320,203,400,245,480,266.7C560,288,640,288,720,288C800,288,880,288,960,272C1040,256,1120,224,1200,186.7C1280,149,1360,107,1400,85.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-                    </path>
-                </svg>
-                <svg class="curved-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#F5F3EE" fill-opacity="1"
-                        d="M0,160L60,181.3C120,203,240,245,360,272C480,299,600,309,720,298.7C840,288,960,256,1080,224C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                    </path>
-                </svg>
-            </div>
+      <!-- Mobile Intro -->
+      <div class="row home-text-mobile animation" id="home-mobile">
+        <div class="col-12 align-items-center px-5">
+          <h3>Vermögensaufbau und persönliche Online-Beratung</h3>
+          <p>
+            Bei uns erhalten Sie eine exzellente Beratung beim Aufbau und der
+            Verwaltung Ihres Vermögens. Wir kümmern uns um Ihre finanziellen
+            Ziele und helfen Ihnen, aus Ihrem Geld das Beste zu machen.
+          </p>
+
+          <p>
+            Nutzen Sie jetzt unser Kontaktformular und vereinbaren Sie ein
+            Beratungsgespräch – Zögern Sie nicht!
+          </p>
+          <h3>Nutzen Sie unsere unverbindliche Online Beratung!</h3>
         </div>
+      </div>
+      <!-- Mobile Intro End -->
+      <div class="row animation" id="home-desktop">
+        <div class="col-6"></div>
+        <div class="col-6 home-text-desktop px-5">
+          <h3>Vermögensaufbau und persönliche Online-Beratung</h3>
+          <p>
+            Bei uns erhalten Sie eine exzellente Beratung beim Aufbau und der
+            Verwaltung Ihres Vermögens. Wir kümmern uns um Ihre finanziellen
+            Ziele und helfen Ihnen, aus Ihrem Geld das Beste zu machen.
+          </p>
+
+          <p>
+            Nutzen Sie jetzt unser Kontaktformular und vereinbaren Sie ein
+            Beratungsgespräch – Zögern Sie nicht!
+          </p>
+          <h3>Nutzen Sie unsere unverbindliche Online Beratung!</h3>
+        </div>
+      </div>
+
+      <div class="row curved">
+        <div class="col-12">
+          <svg
+            class="curved-1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#98C00A"
+              fill-opacity="1"
+              d="M0,160L60,149.3C120,139,240,117,360,133.3C480,149,600,203,720,229.3C840,256,960,256,1080,218.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+          <svg
+            class="curved-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#610556"
+              fill-opacity="1"
+              d="M0,160L40,160C80,160,160,160,240,181.3C320,203,400,245,480,266.7C560,288,640,288,720,288C800,288,880,288,960,272C1040,256,1120,224,1200,186.7C1280,149,1360,107,1400,85.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+            ></path>
+          </svg>
+          <svg
+            class="curved-3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#F5F3EE"
+              fill-opacity="1"
+              d="M0,160L60,181.3C120,203,240,245,360,272C480,299,600,309,720,298.7C840,288,960,256,1080,224C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
     </div>
     <div class="container-flow bg-beige">
-        <div class="row py-5">
-            <div class="col-12 text-center reveal">
-                <h2 style="color:#98C00A; font-family: handwrittenFont;">„Eine Investition in Wissen bringt immer noch
-                    die besten Zinsen“</h2>
-                <h3 style="font-style: italic;">Benjamin Franklin</h3>
-            </div>
+      <div class="row py-5">
+        <div class="col-12 text-center reveal">
+          <h2 style="color: #98c00a; font-family: handwrittenFont">
+            „Eine Investition in Wissen bringt immer noch die besten Zinsen“
+          </h2>
+          <h3 style="font-style: italic">Benjamin Franklin</h3>
         </div>
-        <div class="row">
-            <div class="col-8 start-content-d" style="margin-top: 5vh; margin-bottom: 0vh;">
-                <div class="start-text-d reveal" style="padding: 20px; background-color: #F5F3EE; color: black; padding-top: 0px;">
-                    <h3>Vermögensaufbau und persönliche Online-Beratung</h3>
-                    <p> Bei uns erhalten Sie eine exzellente Beratung beim Aufbau und der Verwaltung Ihres Vermögens.
-                        Wir kümmern uns um Ihre finanziellen Ziele und helfen Ihnen, aus Ihrem Geld das Beste zu machen.
-                    </p>
-
-                    <p>Nutzen Sie jetzt unser Kontaktformular und vereinbaren Sie ein Beratungsgespräch – Zögern Sie
-                        nicht!</p>
-                    <h3>Nutzen Sie unsere unverbindliche Online Beratung!</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row py-5 justify-content-center text-center reveal">
-            <h3 class="py-5">Was interessiert Sie?</h3>
-            <a href="betr_alt.html" class="col-2 card-link mx-2 py-5">
-                <img src="static/icons/Icon_BA.png" alt="icon">
-                <h4 class="mt-4">Betriebliche Altersversorgung</h4>
-            </a>
-            <a href="aerzte_apotheker.html" class="col-2 card-link mx-2 py-5">
-                <img src="static/icons/Icon_aerzte.png" alt="icon">
-                <h4 class="mt-4">Finanzberatung für Ärzte Apotheker</h4>
-            </a>
-            <a href="verm_management.html" class="col-2 card-link mx-2 py-5">
-                <img src="static/icons/Icon_Vermoegen.png" alt="icon">
-                <h4 class="mt-4">Vermögens- <br> management</h4>
-            </a>
-            <a href="finanzierung.html" class="col-2 card-link mx-2 py-5">
-                <img src="static/icons/Icon_Finanzen.png" alt="icon">
-                <h4 class="mt-4">Finanzierung</h4>
-            </a>
-            <a href="versicherung.html" class="col-2 card-link mx-2 py-5">
-                <img src="static/icons/Icon_Versicherung.png" alt="icon">
-                <h4 class="mt-4">Versicherungen</h4>
-            </a>
-
-        </div>
+      </div>
+      <div class="row pb-5 justify-content-center text-center reveal">
+        <h3 class="py-5">Was interessiert Sie?</h3>
+        <a href="betr_alt.html" class="col-md-2 card-link mx-2 py-5">
+          <img src="static/icons/Icon_BA.png" alt="icon" />
+          <h4 class="mt-4">Betriebliche Altersversorgung</h4>
+        </a>
+        <a href="aerzte_apotheker.html" class="col-md-2 card-link mx-2 py-5">
+          <img src="static/icons/Icon_aerzte.png" alt="icon" />
+          <h4 class="mt-4">Finanzberatung für Ärzte Apotheker</h4>
+        </a>
+        <a href="verm_management.html" class="col-md-2 card-link mx-2 py-5">
+          <img src="static/icons/Icon_Vermoegen.png" alt="icon" />
+          <h4 class="mt-4">
+            Vermögens- <br />
+            management
+          </h4>
+        </a>
+        <a href="finanzierung.html" class="col-md-2 card-link mx-2 py-5">
+          <img src="static/icons/Icon_Finanzen.png" alt="icon" />
+          <h4 class="mt-4">Finanzierung</h4>
+        </a>
+        <a href="versicherung.html" class="col-md-2 card-link mx-2 py-5">
+          <img src="static/icons/Icon_Versicherung.png" alt="icon" />
+          <h4 class="mt-4">Versicherungen</h4>
+        </a>
+      </div>
     </div>
 
     <div class="container-flow pic-component">
-        <div class="row h-100">
-            <div class="col-sm-6 png-pic-cont">
-                <div class="png-design">
-                    <img class src="static/design_comp-purple.png" alt="png-design">
-                </div>
-                <div class="design-pic">
-                    <img src="static/altersvorsorge.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="col-sm-5 d-flex align-items-center">
-                <div class="png-pic-text-cont reveal">
-                    <h3> Betriebliche <br> Altersversorgung</h3>
-
-                    <p class="p-text my-3">
-                        Durch das sinkende Rentenniveau in der gesetzlichen Rentenversicherung hat die
-                        Betriebliche
-                        Altersversorgung (bAV) für die Alterssicherung von Arbeitnehmern erheblich an Bedeutung
-                        gewonnen.
-                        <br>
-                    </p>
-                    <a href="betr_alt.html">
-                        <button class="btn" style="background-color:#610556; color: white">Mehr erfahren
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                            </svg></button>
-                    </a>
-
-                </div>
-            </div>
+      <div class="row h-100">
+        <div class="col-sm-6 png-pic-cont">
+          <div class="png-design">
+            <img class src="static/design_comp-purple.png" alt="png-design" />
+          </div>
+          <div class="design-pic">
+            <img src="static/altersvorsorge.jpg" alt="" />
+          </div>
         </div>
+
+        <div class="col-sm-5 d-flex align-items-center">
+          <div class="png-pic-text-cont px-5 reveal">
+            <h3>
+              Betriebliche <br />
+              Altersversorgung
+            </h3>
+
+            <p class="p-text my-3">
+              Durch das sinkende Rentenniveau in der gesetzlichen
+              Rentenversicherung hat die Betriebliche Altersversorgung (bAV) für
+              die Alterssicherung von Arbeitnehmern erheblich an Bedeutung
+              gewonnen.
+              <br />
+            </p>
+            <a href="betr_alt.html">
+              <button
+                class="btn"
+                style="background-color: #610556; color: white"
+              >
+                Mehr erfahren
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container-flow bg-beige py-5">
-        <div class="row text-center justify-content-center py-4">
-            <div class="col-8">
-                <h3 class="py-5">Wir bieten ihnen Finanzberatung für Ärzte <br> Apotheker an</h3>
-                <p class='p-text'>Qualifizierte Finanzberatung für Ärzte, Zahnärzte und Apotheker. <br> Wir beraten und
-                    begleiten seit 1999
-                    Ärzte, Zahnärzte und Apotheker
-                    <br> in allen Finanzfragen für Anspruchsvolle Kunden.
-                </p>
-            </div>
+      <div class="row text-center justify-content-center py-4">
+        <div class="col-8">
+          <h3 class="py-5">
+            Wir bieten ihnen Finanzberatung für Ärzte <br />
+            Apotheker an
+          </h3>
+          <p class="p-text">
+            Qualifizierte Finanzberatung für Ärzte, Zahnärzte und Apotheker.
+            <br />
+            Wir beraten und begleiten seit 1999 Ärzte, Zahnärzte und Apotheker
+            <br />
+            in allen Finanzfragen für Anspruchsvolle Kunden.
+          </p>
         </div>
-        <div class="row justify-content-center text-center py-4">
-            <div class="col-2 card-link-2 mx-2">
-                <div class="my-3 mx-4">
-                    <img src="static/icons/Icon_Vermoegen.png" alt="icon">
-                </div>
-                <h4 class="mt-3">Existenzgründung</h4>
-            </div>
-            <div class="col-2 card-link-2 mx-4">
-                <div class="my-3 mx-4">
-                    <img src="static/icons/Icon_Finanzen.png" alt="icon">
-                </div>
-                <h4 class="mt-3">Praxisfinanzierung</h4>
-            </div>
-            <div class="col-2 card-link-2 mx-4">
-                <div class="my-3 mx-4">
-                    <img src="static/icons/Icon_Versicherung.png" alt="icon">
-                </div>
-                <h4 class="mt-3">Praxisversicherung</h4>
-            </div>
-            <div class="col-2 card-link-2 mx-4">
-                <div class="my-3 mx-4">
-                    <img src="static/icons/Icon_aerzte.png" alt="icon">
-                </div>
-                <h4 class="mt-3">Praxisübernahme <br> und Verkauf</h4>
-            </div>
+      </div>
+      <div class="row justify-content-center text-center py-4">
+        <div class="col-2 card-link-2 mx-md-4">
+          <div class="my-3 mx-4">
+            <img src="static/icons/Icon_Vermoegen.png" alt="icon" />
+          </div>
+          <h4 class="mt-3">Existenzgründung</h4>
         </div>
-        <div class="row justify-content-center text-center">
-            <a href="aerzte_apotheker.html">
-                <button class="btn">Mehr erfahren
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                    </svg></button>
-            </a>
+        <div class="col-2 card-link-2 mx-md-4">
+          <div class="my-3 mx-4">
+            <img src="static/icons/Icon_Finanzen.png" alt="icon" />
+          </div>
+          <h4 class="mt-3">Praxisfinanzierung</h4>
         </div>
+        <div class="col-2 card-link-2 mx-md-4">
+          <div class="my-3 mx-4">
+            <img src="static/icons/Icon_Versicherung.png" alt="icon" />
+          </div>
+          <h4 class="mt-3">Praxisversicherung</h4>
+        </div>
+        <div class="col-2 card-link-2 mx-md-4">
+          <div class="my-3 mx-4">
+            <img src="static/icons/Icon_aerzte.png" alt="icon" />
+          </div>
+          <h4 class="mt-3">
+            Praxisübernahme <br />
+            und Verkauf
+          </h4>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <a href="aerzte_apotheker.html">
+          <button class="btn">
+            Mehr erfahren
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </button>
+        </a>
+      </div>
     </div>
 
-
     <div class="container-flow pic-component">
-        <div class="row h-100">
-            <div class="col-1"></div>
-            <div class="col-sm-5 d-flex align-items-center">
-                <div class="png-pic-text-cont reveal">
-                    <h3> Vermögensmanagement</h3>
+      <div class="row h-100">
+        <div class="col-1"></div>
+        <div class="col-sm-5 d-flex align-items-center">
+          <div class="png-pic-text-cont px-5 reveal">
+            <h3>Vermögensmanagement</h3>
 
-                    <p class="p-text my-3">
-                        Die Möglichkeiten attraktiver Geldanlagen sind vielfältig.
-                    </p>
-                    <a href="verm_management.html">
-                        <button class="btn" style="background-color:#98C00A; color: white">Mehr erfahren
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                            </svg></button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 png-pic-cont">
-                <div class="png-design-right">
-                    <img class src="static/design-comp-green.png" alt="png-design">
-                </div>
-                <div class="design-pic-right">
-                    <img src="static/vermoegensmanagement.jpg" alt="">
-                </div>
-            </div>
+            <p class="p-text my-3">
+              Die Möglichkeiten attraktiver Geldanlagen sind vielfältig.
+            </p>
+            <a href="verm_management.html">
+              <button
+                class="btn"
+                style="background-color: #98c00a; color: white"
+              >
+                Mehr erfahren
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
+        <div class="col-sm-6 png-pic-cont">
+          <div class="png-design-right">
+            <img class src="static/design-comp-green.png" alt="png-design" />
+          </div>
+          <div class="design-pic-right">
+            <img src="static/vermoegensmanagement.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container-flow pic-component bg-beige">
-        <div class="row h-100">
-            <div class="col-sm-6 png-pic-cont">
-                <div class="png-design">
-                    <img class src="static/design_comp-purple.png" alt="png-design">
-                </div>
-                <div class="design-pic">
-                    <img src="static/finanzierung.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="col-sm-5 d-flex align-items-center">
-                <div class="png-pic-text-cont reveal">
-                    <h3> Finanzierung</h3>
-
-                    <p class="p-text my-3">
-                        Flexibel und unabhängig können wir auf ein breites Netzwerk mit verlässlichen
-                        Finanzierungspartnern zurückgreifen und in Ihrem Interesse stets die ideale Lösung finden.
-                        <br>
-                        <br>
-                        Bei uns finden Sie keine Standardlösungen für die Finanzierung Ihres Immobilienvorhabens. Egal
-                        ob als Wohnbaufinanzierung oder Existenzgründung. Gemeinsam mit Ihnen entwickeln wir das
-                        passende Finanzierungskonzept für Ihr Vorhaben.
-                    </p>
-                    <a href="finanzierung.html">
-                        <button class="btn" style="background-color:#610556; color: white">Mehr erfahren
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                            </svg></button></a>
-
-
-                </div>
-            </div>
+      <div class="row h-100">
+        <div class="col-sm-6 png-pic-cont">
+          <div class="png-design">
+            <img class src="static/design_comp-purple.png" alt="png-design" />
+          </div>
+          <div class="design-pic">
+            <img src="static/finanzierung.jpg" alt="" />
+          </div>
         </div>
+
+        <div class="col-sm-6 d-flex align-items-center">
+          <div class="png-pic-text-cont px-5 reveal">
+            <h3>Finanzierung</h3>
+
+            <p class="p-text">
+              Flexibel und unabhängig nutzen wir ein breites Netzwerk
+              verlässlicher Partner, um die ideale Finanzierungslösung für Sie
+              zu finden. Bei uns gibt es keine Standardlösungen. Ob
+              Wohnbaufinanzierung oder Existenzgründung, wir entwickeln
+              gemeinsam das passende Konzept für Ihr Vorhaben.
+            </p>
+            <a href="finanzierung.html">
+              <button
+                class="btn"
+                style="background-color: #610556; color: white"
+              >
+                Mehr erfahren
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container-flow pic-component">
-        <div class="row h-100">
-            <div class="col-1"></div>
-            <div class="col-sm-5 d-flex align-items-center">
-                <div class="png-pic-text-cont reveal">
-                    <h3> Versicherungen</h3>
+      <div class="row h-100">
+        <div class="col-1"></div>
+        <div class="col-sm-5 d-flex align-items-center">
+          <div class="png-pic-text-cont px-5 reveal">
+            <h3>Versicherungen</h3>
 
-                    <p class="p-text my-3">
-                        Wir beraten Sie individuell und auf Ihre Bedürfnisse zugeschnitten. Je nach Zielgruppe und
-                        Ansprüchen suchen wir Ihnen die geeigneteste Versicherungslösung aus.
-                    </p>
-                    <a href="versicherung.html">
-                        <button class="btn" style="background-color:#98C00A; color: white">Mehr erfahren
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                            </svg></button></a>
-
-                </div>
-            </div>
-            <div class="col-sm-6 png-pic-cont">
-                <div class="png-design-right">
-                    <img class src="static/design-comp-green.png" alt="png-design">
-                </div>
-                <div class="design-pic-right">
-                    <img src="static/versicherung.jpg" alt="">
-                </div>
-            </div>
+            <p class="p-text my-3">
+              Wir beraten Sie individuell und auf Ihre Bedürfnisse
+              zugeschnitten. Je nach Zielgruppe und Ansprüchen suchen wir Ihnen
+              die geeigneteste Versicherungslösung aus.
+            </p>
+            <a href="versicherung.html">
+              <button
+                class="btn"
+                style="background-color: #98c00a; color: white"
+              >
+                Mehr erfahren
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  />
+                </svg></button
+            ></a>
+          </div>
         </div>
+        <div class="col-sm-6 png-pic-cont">
+          <div class="png-design-right">
+            <img class src="static/design-comp-green.png" alt="png-design" />
+          </div>
+          <div class="design-pic-right">
+            <img src="static/versicherung.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="text-white text-center text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-md-6">
-                    <div class="icon-footer-div py-2">
-                        <img src="static/logo_2.png" alt="">
-
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <p style="font-weight: bold;">Rechtliches </p>
-
-                    <ul class="list-unstyled mb-0 footer-list">
-                        <li>
-                            <a href="erstinformation.html" class="text-white link-footer">Erstinformation</a>
-                        </li>
-                        <li>
-                            <a href="impressum.html" class="text-white link-footer">Impressum</a>
-                        </li>
-                        <li>
-                            <a href="datenschutz.html" class="text-white link-footer">Datenschutz</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <p style="font-weight: bold;">Kontaktieren Sie uns: </p>
-                    <a href="kontakt.html" style="text-decoration: none; color: white;">Kontakt</a>
-                </div>
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
+      <!--Grid row-->
+      <div class="row p-4">
+        <!--Grid column-->
+        <div class="col-md-6">
+          <div class="icon-footer-div py-2">
+            <img src="static/logo_2.png" alt="" />
+          </div>
         </div>
-        <!-- Grid container -->
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p style="font-weight: bold">Rechtliches</p>
+
+          <ul class="list-unstyled mb-0 footer-list">
+            <li>
+              <a href="erstinformation.html" class="text-white link-footer"
+                >Erstinformation</a
+              >
+            </li>
+            <li>
+              <a href="impressum.html" class="text-white link-footer"
+                >Impressum</a
+              >
+            </li>
+            <li>
+              <a href="datenschutz.html" class="text-white link-footer"
+                >Datenschutz</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p style="font-weight: bold">Kontaktieren Sie uns:</p>
+          <a href="kontakt.html" style="text-decoration: none; color: white"
+            >Kontakt</a
+          >
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
     </footer>
 
     <!-- Footer -->
+  </body>
 
-</body>
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-<script>
+    crossorigin="anonymous"
+  ></script>
+  <script>
     // $(document).ready(function () {
     //     $(window).on('scroll', function () {
     //         var $nav = $('.navbar');
@@ -428,25 +573,24 @@
     //         }
     //     });
     // });
-</script>
-<script>
+  </script>
+  <script>
     function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
-            } else {
-                reveals[i].classList.remove("active");
-            }
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
         }
+      }
     }
 
-    window.addEventListener('scroll', reveal);
-</script>
+    window.addEventListener("scroll", reveal);
+  </script>
 
-<!-- Bootstrap JS  -->
-
+  <!-- Bootstrap JS  -->
 </html>

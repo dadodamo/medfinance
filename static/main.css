@@ -448,6 +448,24 @@ footer {
     height: auto;
     border-radius: 15px;
 }
+#home-mobile {
+    display: none;
+}
+.home-text-desktop{
+    position: absolute;
+    left: 50%;
+    height:100%;
+    width: 50%;
+    padding-top:20vh;
+    background-image: -webkit-linear-gradient(right, 
+    #610556f7 0%, 
+    #610556b8 20%,
+    #610556 80%,
+    #610556b8 100%);
+    height:100%;
+    color: white;
+}
+
 
 /* Media Queries for mobile */
 
@@ -459,9 +477,9 @@ footer {
         }
         #navbar-mobile {
             display: flex;
-            position: fixed;
-            top: 0;
-            width: 100%;
+            position:fixed;
+            /* top: 0; */
+            width: 100vw; 
         }
         .nav-link {
             font-size: large;
@@ -482,6 +500,64 @@ footer {
             height: 40px;
             padding-left: 10px;
         }
+        #home-desktop {
+            display:none;
+        }
+        #home-mobile {
+            display: block;
+        }
+        .home-text-mobile {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            padding-top: 20vh;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            color: white;
+            background-color: #610556b8;
+
+        }
+        .card-link {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: black !important;
+            background-color: white !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+
+        }
+        .card-link h4 {
+            font-size: 15px;
+        }
+        .card-link-2 {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: black !important;
+            background-color: white !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+
+        }
+        .card-link-2 h4 {
+            font-size: 15px;
+        }
+        .icon-footer-div img {
+            display: block;
+            position: relative;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+        .icon-footer-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
 }
 
 
