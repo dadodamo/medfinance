@@ -4,23 +4,23 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'Demo contact form <serkan.u@icloud.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <demo@domain.com>';
+$sendTo = 'Demo contact form <tuerk@med-pf.de>';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Neue Nachricht von deinem Website Kontaktformular medprivatefinance.de';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Kontaktdaten erfolgreich weitergeleitet. Wir werden uns schnellstmöglich bei Ihnen melden!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Hmm, das hat leider nicht geklappt. Bitte versuche es erneut.';
 
 /*
  *  LET'S DO THE SENDING
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "Neue Nachricht von deinem Website Kontaktformular medprivatefinance.de\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
